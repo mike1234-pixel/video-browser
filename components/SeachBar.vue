@@ -1,7 +1,13 @@
 <template>
   <div>
     <!-- directive, can use 'v-on:' or '@' to set up event listener -->
-    <input id="search-bar" @input="onInput" placeholder="Search youtube. Returns five matching results." />
+    <font-awesome-icon :icon="['fas', 'search']" />
+    <input
+      id="search-bar"
+      @input="onInput"
+      placeholder="Search youtube. Returns five matching results."
+      class="bg-gray-200 focus:bg-white"
+    />
   </div>
 </template>
 
@@ -19,7 +25,7 @@ export default {
 
 <style scoped>
 input {
-  width: 75%;
+  width: 350px;
   border: solid 1px black;
 }
 div {

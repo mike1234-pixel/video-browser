@@ -1,6 +1,5 @@
 <template>
-  <div class="container">
-    <Navigation></Navigation>
+  <div class="home-container bg-gray-300 min-h-screen">
     <div>
       <!-- @ listen for custom events coming from the SearchBar component -->
       <SearchBar @termChange="onTermChange"></SearchBar>
@@ -68,7 +67,10 @@ export default {
 </script>
 
 <style>
-.container {
+.home-container {
   width: 100vw;
+  display: flex;
+  justify-content: center;
+ 
 }
 </style>

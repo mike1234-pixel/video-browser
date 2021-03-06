@@ -1,7 +1,10 @@
 <template>
-  <nav class="nav flex items-center justify-between flex-wrap bg-teal-500 p-6">
+  <nav class="nav flex items-center justify-between flex-wrap bg-red-500 p-6">
     <div class="flex items-center flex-shrink-0 text-white mr-6">
-      <span class="font-semibold text-xl tracking-tight">YouTube Browser</span>
+      <NuxtLink to="/" class="font-semibold text-xl tracking-tight">
+        <font-awesome-icon :icon="['fas', 'tv']" />
+        Video Browser</NuxtLink
+      >
     </div>
     <!-- hamburger menu btn -->
     <div class="block lg:hidden">
@@ -24,24 +27,18 @@
       class="w-full block flex-grow lg:flex lg:items-center lg:w-auto"
     >
       <div class="text-sm lg:flex-grow">
-        <a
-          href="#responsive-header"
+        <NuxtLink
+          to="/"
           class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
         >
-          Docs
-        </a>
-        <a
-          href="#responsive-header"
+          Search
+        </NuxtLink>
+        <NuxtLink
+          to="/about"
           class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
         >
-          Examples
-        </a>
-        <a
-          href="#responsive-header"
-          class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
-        >
-          Blog
-        </a>
+          About
+        </NuxtLink>
       </div>
     </div>
   </nav>
