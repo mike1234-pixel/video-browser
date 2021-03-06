@@ -29,13 +29,13 @@
       <div class="text-sm lg:flex-grow">
         <NuxtLink
           to="/"
-          class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+          class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 font-black"
         >
           Search
         </NuxtLink>
         <NuxtLink
           to="/about"
-          class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+          class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 font-black"
         >
           About
         </NuxtLink>
@@ -57,6 +57,6 @@ export default {
 
 <style scoped>
 .nav {
-  width: 100vw;
+  width: 100%;
 }
 </style>

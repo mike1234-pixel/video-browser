@@ -27,6 +27,7 @@ export default {
 input {
   width: 350px;
   border: solid 1px black;
+  padding: 6px;
 }
 div {
   text-align: center;

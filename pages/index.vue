@@ -1,5 +1,5 @@
 <template>
-  <div class="home-container bg-gray-300 min-h-screen">
+  <div class="flex-col min-w-full justify-center min-h-screen p-6 container">
     <div>
       <!-- @ listen for custom events coming from the SearchBar component -->
       <SearchBar @termChange="onTermChange"></SearchBar>
@@ -67,10 +67,11 @@ export default {
 </script>
 
 <style>
-.home-container {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
- 
+.container {
+  background-image: url("../assets/background-tv.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 </style>
